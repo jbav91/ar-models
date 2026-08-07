@@ -1,3 +1,23 @@
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-<model-viewer src="headphones.glb" ios-src="headphones.usdz" ar ar-modes="scene-viewer quick-look" poster="headphones.jpg" camera-controls>
-</model-viewer>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View in AR</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body style="margin:0">
+  <model-viewer
+    src="headphones.glb"
+    ios-src="headphones.usdz"
+    poster="headphones.jpg"
+    alt="3D model"
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    style="width: 100vw; height: 100vh;">
+  </model-viewer>
+</body>
+</html>
